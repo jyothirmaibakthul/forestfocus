@@ -1,0 +1,49 @@
+2.2 React Application Setup
+Use React to build the extension’s user interface. Install dependencies:
+bash
+Copy code
+npm install react react-dom
+src/App.js
+jsx
+Copy code
+import React from 'react';
+import Timer from './components/Timer';
+import Tree from './components/Tree';
+import Settings from './components/Settings';
+import Share from './components/Share';
+
+function App() {
+  return (
+    <div>
+      <h1>FocusForest</h1>
+      <Tree />
+      <Timer />
+      <Settings />
+      <Share />
+    </div>
+  );
+}
+
+export default App;
+src/index.js
+jsx
+Copy code
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+src/popup.html
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FocusForest</title>
+  <script defer src="popup.js"></script>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

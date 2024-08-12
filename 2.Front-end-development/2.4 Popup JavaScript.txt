@@ -1,0 +1,25 @@
+2.4 Popup JavaScript
+src/popup.js
+javascript
+Copy code
+document.getElementById('start').addEventListener('click', () => {
+  chrome.runtime.sendMessage({ action: 'startSession' });
+});
+
+document.getElementById('end').addEventListener('click', () => {
+  chrome.runtime.sendMessage({ action: 'endSession' });
+});
+src/content.js
+javascript
+Copy code
+const blockedSites = ['example.com', 'anotherexample.com'];
+
+chrome.storage.local.get('currentTree', (data) => {
+  if (data.currentTree) {
+    const currentUrl = window.location.hostname;
+    if (blockedSites.includes(currentUrl)) {
+      alert("You're on a blocked site! Focus on your work.");
+      window.location.href = 'about:blank';
+    }
+  }
+});

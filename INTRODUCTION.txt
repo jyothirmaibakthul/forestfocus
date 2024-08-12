@@ -1,0 +1,12 @@
+Stay focused in a pleasant way.
+
+CREATE A GOOGLE CHROME EXTENSION  WITH   Features:
+* A self-motivated and interesting method to help you beat Internet addiction
+* Cultivate your personal pattern of time management: make good use of 45-minutes to fully concentrate on your work and finish it effectively
+* Share your trees with friends IN THIS EXTENSIONS USER SHOULD START THE PLANTATION OF TREE IN ORDER TO START THE TIMER AS THE USER WORKS FOR MORE TIME THE TREE GROWS IN 3D WAY THE EXTENSION SHOULD ALLOW THE USER TO BLOCK URL WHICH MAKES USER DSTRACTED AND HE CAN include the websites he is using also in settings the user can login and save his/her time spend on this extension to increase his productivity the tree should cheer him with the productivity captions .if the user completely spend his time on the allowed websites ,ultimately the tree grows completely and congratulates the user and asking him to start new tree. the tree already grown will be saved in the planting record display the no of trees he made.in case the user fails to complete the tree or visits the websites which are blocked the level of the that has grown will  decreases   and the no of minutes he spends on blocked websites =the no of minutes of the level of the tree will be decreased .ultimately the tree dies and says better luck next time. using HTML CSS JavaScript node.js react.js and backend web development
+
+
+To create a Google Chrome extension with the features you’ve outlined, we need to address several key components including the frontend (HTML, CSS, React), backend (Node.js), and Chrome extension APIs. Here’s a detailed guide on how to develop this extension:
+Overview
+Name: Focus Forest
+Description: Focus Forest is a Google Chrome extension designed to help users manage their time and overcome internet addiction by gamifying their productivity with a 3D growing tree. Users start a focus session, block distracting websites, and see their productivity reflected in the growth of a virtual tree.

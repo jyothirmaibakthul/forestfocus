@@ -1,0 +1,37 @@
+2.3 Tree Visualization
+For the 3D tree visualization, use a library like Three.js.
+src/components/Tree.js
+jsx
+Copy code
+import React, { useEffect } from 'react';
+import * as THREE from 'three';
+
+const Tree = () => {
+  useEffect(() => {
+    // Initialize Three.js scene
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('root').appendChild(renderer.domElement);
+
+    // Create tree geometry and material
+    const geometry = new THREE.ConeGeometry(5, 20, 32);
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const tree = new THREE.Mesh(geometry, material);
+    scene.add(tree);
+
+    camera.position.z = 50;
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+      renderer.render(scene, camera);
+    };
+
+    animate();
+  }, []);
+
+  return <div id="tree-container" />;
+};
+
+export default Tree;

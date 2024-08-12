@@ -1,0 +1,35 @@
+
+1.1 Directory Structure 
+Arduino
+Copy code
+focusforest-extension/
+│
+├── public/
+│   ├── index.html
+│   └── manifest.json
+│
+├── src/
+│   ├── components/
+│   │   ├── Tree.js
+│   │   ├── Timer.js
+│   │   ├── Settings.js
+│   │   └── Share.js
+│   ├── App.js
+│   ├── index.js
+│   ├── popup.html
+│   ├── popup.js
+│   └── content.js
+│
+├── server/
+│   ├── index.js
+│   ├── routes/
+│   │   └── users.js
+│   ├── models/
+│   │   └── User.js
+│   └── config/
+│       └── db.js
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── webpack.config.js
